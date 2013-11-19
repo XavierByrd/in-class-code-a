@@ -147,9 +147,29 @@ var topMovies = [
 $(function(){
 
     //Demo: build basic line chart
-    
+    var canvas = document.getElementById('chart');
+    var ctx = canvas.getContext('2d');
+
     //Demo: build basic bar chart
 
+    var moviesChartData = {
+        labels: [],
+        datasets: [{
+            data: []
+        }] 
+    };
+
+    //write code to loop over topMovies array and
+    //populate the labels and data arrays in
+    //moviesChartData
+    var idx;
+    for (idx = 0; idx < topMovies.length; ++idx) {
+        moviesChartData.labels.push(topMovies[idx].title);
+        moviesChartData.datasets[0].data.push(topMovies[idx].revenue);
+    }
+
+   new Chart(ctx).Bar(moviesChartData);
+    
 
     /*
         In-Class Challenge!
