@@ -3,3 +3,16 @@
     Styles for the SVG demo page
 */
 
+.svg-demo .background {
+	fill: #FF0000;
+}
+
+.svg-demo .badge {
+	fill: #00FF00;
+}
+
+.svg-demo text {
+	font-family: 'Helvetica';
+	font-size: 60px;
+	fill: #FFFFFF;
+}
