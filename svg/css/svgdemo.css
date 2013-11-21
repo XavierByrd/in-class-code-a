@@ -3,16 +3,19 @@
     Styles for the SVG demo page
 */
 
-.svg-demo .background {
-	fill: #FF0000;
+.svg-demo .axis {
+	stroke: #000;
+	stroke-width: 2;
 }
 
-.svg-demo .badge {
-	fill: #00FF00;
+.svg-demo .point {
+	fill: #00F;
+	stroke: #009;
+	fill-opacity: 0.5;
 }
 
-.svg-demo text {
-	font-family: 'Helvetica';
-	font-size: 60px;
-	fill: #FFFFFF;
+.svg-demo .point:hover {
+	fill: #F00;
+	stroke: #900;
+	fill-opacity: 1;
 }
